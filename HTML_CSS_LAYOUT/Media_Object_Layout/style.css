@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #EFEFEF;
+    padding: 20px;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    background: #F6F3EB;
+    padding: 1em;
+    border-radius: 8px;
+    max-width: 26em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+
+.media-object {
+    width: 70px; /* Set a fixed size for consistency */
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1em;
+}
+
+.media-body {
+    flex: 1;
+}
+
+.media-heading {
+    margin: 0 0 .5em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Styling for nested media */
+.media .media {
+    margin-top: 10px;
+    padding: 0.8em;
+    background: #FFF; /* Different background for nested elements */
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
